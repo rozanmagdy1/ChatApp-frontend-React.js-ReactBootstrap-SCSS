@@ -1,0 +1,18 @@
+@import "./globalSass/colors";
+@import "./globalSass/fonts";
+@import "./globalSass/media";
+@import "./globalSass/globalMixins";
+
+.home .subTitle{
+  color: $color1;
+  letter-spacing: 3px;
+}
+.home .chat{
+  @include main_button;
+}
+.home .spinner{
+  @include spinner;
+}
+td, th{
+  font-size: 18px;
+}

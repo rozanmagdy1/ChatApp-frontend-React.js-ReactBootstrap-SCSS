@@ -1,0 +1,62 @@
+@import "./globalSass/colors";
+.header{
+  background-color: $color1;
+}
+.header h2{
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+.header .logout ,.header .room{
+  border: none;
+  background-color: transparent;
+  letter-spacing: 4px;
+}
+.header svg{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header .counter {
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 7px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4.5%;
+  right: 11.2%;
+}
+
+.header .notifications {
+  position: absolute;
+  top: 10%;
+  right: 4%;
+  background-color: $color6;
+  color: black;
+  font-weight: 200;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.header .notification {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.header .nButton {
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: $color1;
+  color: white;
+}

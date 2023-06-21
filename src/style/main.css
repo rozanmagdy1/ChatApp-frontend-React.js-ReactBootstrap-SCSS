@@ -1,0 +1,409 @@
+.login {
+  border: 1px solid rgba(128, 128, 128, 0.38);
+  height: 60vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+@media screen and (max-width: 1024px) {
+  .login {
+    height: auto;
+  }
+}
+
+.login .left {
+  border-right: 2px solid rgba(128, 128, 128, 0.38);
+  height: 60vh;
+}
+@media screen and (max-width: 1024px) {
+  .login .left {
+    height: auto;
+  }
+}
+
+.login .left h2 {
+  letter-spacing: 4px;
+  font-family: poppins, sans-serif;
+  opacity: 0.8;
+}
+
+.login .left a {
+  letter-spacing: 3px;
+  font-family: poppins, sans-serif;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.login .right .login-btn,
+.login .left .signup-btn {
+  background-color: #93BFCF;
+  border: none;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+  .login .right {
+    padding-top: 0 !important;
+  }
+}
+
+.login .right .login-btn:hover,
+.login .left .signup-btn:hover,
+.login .left .signup-btn:active {
+  background-color: #a19aca;
+}
+
+.login .right input {
+  font-size: 16px;
+  width: 100%;
+  height: 6vh;
+}
+
+.login .right label {
+  font-size: 19px;
+  font-family: Roboto, sans-serif;
+  opacity: 0.8;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.login .form-fields {
+  width: 110%;
+}
+
+.login .row {
+  height: 60vh;
+}
+@media screen and (max-width: 1024px) {
+  .login .row {
+    height: auto;
+  }
+}
+
+.signup .signup-btn {
+  background-color: #93BFCF;
+  border: none;
+  transition: 0.3s;
+}
+
+.signup .signup-btn:hover, .signup .signup-btn:active {
+  background-color: #a19aca;
+}
+
+.signup label {
+  font-size: 19px;
+  font-family: Roboto, sans-serif;
+  opacity: 0.8;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.signup input {
+  font-size: 16px;
+  width: 100%;
+  height: 6vh;
+}
+
+.signup h2 {
+  letter-spacing: 4px;
+  font-family: poppins, sans-serif;
+  opacity: 0.8;
+}
+
+.signup .spinner {
+  color: #93BFCF;
+}
+
+.signup-fail h1 {
+  opacity: 0.9;
+  letter-spacing: 4px;
+}
+
+.signup-fail .login-btn, .signup-fail .signup-btn {
+  background-color: #93BFCF;
+  border: none;
+  transition: 0.3s;
+}
+
+.signup-fail .login-btn:hover, .signup-fail .signup-btn:hover {
+  background-color: #a19aca;
+}
+
+.successful-signup h1 {
+  opacity: 0.9;
+  letter-spacing: 4px;
+}
+
+.successful-signup .login-btn {
+  background-color: #93BFCF;
+  border: none;
+  transition: 0.3s;
+}
+
+.successful-signup .login-btn:hover {
+  background-color: #a19aca;
+}
+
+.home .subTitle {
+  color: #93BFCF;
+  letter-spacing: 3px;
+}
+
+.home .chat {
+  background-color: #93BFCF;
+  border: none;
+  transition: 0.3s;
+}
+
+.home .spinner {
+  color: #93BFCF;
+}
+
+td, th {
+  font-size: 18px;
+}
+
+.conversation {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.conversation:hover {
+  background-color: rgb(245, 243, 243);
+}
+
+.conversationImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.conversationName {
+  font-size: 18px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.messageTop {
+  display: flex;
+}
+
+.messageImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.messageText {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #93BFCF;
+  color: white;
+  max-width: 300px;
+  margin: 3px;
+  font-size: 15px;
+}
+
+.messageBottom {
+  font-size: 11px;
+}
+
+.message.own {
+  align-items: flex-end;
+}
+
+.message.own .messageText {
+  background-color: rgb(245, 241, 241);
+  color: black;
+}
+
+.messenger {
+  height: calc(100vh - 50px);
+}
+
+.chatMenu {
+  flex: 3.5;
+}
+
+.chatMenuInput {
+  width: 90%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 20px;
+}
+
+.chatBox {
+  flex: 5.5;
+}
+
+.chatBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.chatBoxTop {
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+.chatBoxBottom {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatMessageInput {
+  width: 80%;
+  height: 90px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.chatMessageInput:focus {
+  outline: none;
+}
+
+.chatSubmitButton {
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #93BFCF;
+  color: white;
+  font-size: 18px;
+}
+
+.chatOnline {
+  flex: 3;
+}
+
+.chatMenuWrapper,
+.chatBoxWrapper,
+.chatOnlineWrapper {
+  padding: 10px;
+  height: 100%;
+}
+
+.noConversationText {
+  position: absolute;
+  top: 10%;
+  font-size: 50px;
+  color: rgb(224, 220, 220);
+  cursor: default;
+}
+
+@media screen and (max-width: 1024px) {
+  #chatMenuWrapper {
+    padding-top: 0.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+  #chatBoxWrapper {
+    padding-top: 0.5rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .messenger {
+    flex-direction: column;
+  }
+  .chatMenu {
+    flex: 1;
+  }
+  .conversation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .chatMenuInput {
+    display: none;
+  }
+  .chatBox {
+    flex: 10;
+  }
+  .chatMenuWrapper {
+    display: flex;
+    gap: 5px;
+  }
+  .chatBoxWrapper {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  }
+  .chatBoxTop {
+    height: 67vh;
+  }
+  .chatOnline {
+    flex: 1px;
+  }
+  .chatOnlineWrapper {
+    display: none;
+  }
+  .chatBoxBottom {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .chatMessageInput {
+    height: auto;
+  }
+  .chatSubmitButton {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+  }
+}
+.chatOnlineFriend {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.chatOnlineImgContainer {
+  position: relative;
+  margin-right: 10px;
+}
+
+.chatOnlineImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid white;
+}
+
+.chatOnlineBadge {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: limegreen;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.chatOnlineName {
+  font-size: 16px;
+}
+
+.spinner {
+  color: #93BFCF;
+}
+
+div {
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=main.css.map */

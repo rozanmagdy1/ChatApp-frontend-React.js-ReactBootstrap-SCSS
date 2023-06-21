@@ -1,0 +1,137 @@
+@import "./globalSass/colors";
+.messenger {
+  height: calc(100vh - 50px);
+}
+.chatMenu {
+  flex: 3.5;
+}
+
+.chatMenuInput {
+  width: 90%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 20px;
+}
+
+.chatBox {
+  flex: 5.5;
+}
+
+.chatBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.chatBoxTop {
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+.chatBoxBottom {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatMessageInput {
+  width: 80%;
+  height: 90px;
+  padding: 10px;
+  font-size: 16px;
+}
+.chatMessageInput:focus {
+  outline: none;
+}
+
+.chatSubmitButton {
+  width: 70px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: $color1;
+  color: $color2;
+  font-size: 18px;
+}
+
+.chatOnline {
+  flex: 3;
+}
+
+.chatMenuWrapper,
+.chatBoxWrapper,
+.chatOnlineWrapper {
+  padding: 10px;
+  height: 100%;
+}
+
+.noConversationText {
+  position: absolute;
+  top: 10%;
+  font-size: 50px;
+  color: rgb(224, 220, 220);
+  cursor: default;
+}
+// mobile res
+@media screen and (max-width: 1024px) {
+  #chatMenuWrapper {
+    padding-top: 0.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+  #chatBoxWrapper {
+    padding-top: 0.5rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .messenger {
+    flex-direction: column;
+  }
+  .chatMenu {
+    flex: 1;
+  }
+  .conversation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .chatMenuInput {
+    display: none;
+  }
+
+  .chatBox {
+    flex: 10;
+  }
+  .chatMenuWrapper {
+    display: flex;
+    gap: 5px;
+  }
+  .chatBoxWrapper {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  }
+  .chatBoxTop {
+    height: 67vh;
+  }
+  .chatOnline {
+    flex: 1px;
+  }
+  .chatOnlineWrapper {
+    display: none;
+  }
+  .chatBoxBottom {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .chatMessageInput {
+    height: auto;
+  }
+  .chatSubmitButton {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+  }
+}
